@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Velvet Rose | Lingerie & Intimates</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="topbar text-center py-2">Free delivery over $60 &nbsp;|&nbsp; Discreet packaging on every order</div>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand brand" href="#top">Velvet Rose</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#categories">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Best sellers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sale">Sale</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <button class="btn cart-btn" data-bs-toggle="offcanvas" data-bs-target="#cart">Cart<span class="cart-count" id="count">0</span></button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="container hero-inner">
+    <div class="row"><div class="col-lg-7">
+      <h1>Wear the confidence.</h1>
+      <p class="my-4">Lace, satin and silk made to fit close and feel incredible. New season collection, sizes XS to 3XL.</p>
+      <a href="#products" class="btn btn-hot btn-lg me-2">Shop the collection</a>
+      <a href="#sale" class="btn btn-ghost btn-lg">See sale</a>
+    </div></div>
+  </div>
+</header>
+
+<section class="section" id="categories">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Find your fit</h2>
+      <p class="section-sub">Four ways to start</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-6 col-lg-3"><a href="#products" class="cat cat-1" data-go="Bras"><div><h3>Bras</h3><small>Push-up, balconette, bralette</small></div></a></div>
+      <div class="col-6 col-lg-3"><a href="#products" class="cat cat-2" data-go="Panties"><div><h3>Panties</h3><small>Thongs, briefs, boyshorts</small></div></a></div>
+      <div class="col-6 col-lg-3"><a href="#products" class="cat cat-3" data-go="Sets"><div><h3>Sets</h3><small>Matching lace and satin</small></div></a></div>
+      <div class="col-6 col-lg-3"><a href="#products" class="cat cat-4" data-go="Sleepwear"><div><h3>Sleepwear</h3><small>Robes, chemises, slips</small></div></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-blush" id="products">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">Best sellers</h2>
+      <p class="section-sub">Loved by thousands of customers</p>
+      <div id="filters">
+        <button class="filter-btn active" data-f="All">All</button>
+        <button class="filter-btn" data-f="Bras">Bras</button>
+        <button class="filter-btn" data-f="Panties">Panties</button>
+        <button class="filter-btn" data-f="Sets">Sets</button>
+        <button class="filter-btn" data-f="Sleepwear">Sleepwear</button>
+      </div>
+    </div>
+    <div class="row g-4" id="grid"></div>
+  </div>
+</section>
+
+<section class="section" id="sale">
+  <div class="container">
+    <div class="promo text-center">
+      <h2>Buy 2, get 1 free</h2>
+      <p class="mb-4">On all lace sets this week. Use code <strong>ROSE3</strong> at checkout.</p>
+      <a href="#products" class="btn btn-ghost btn-lg">Shop lace sets</a>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-6 col-md-3 perk"><div class="ico">&#9829;</div><h3 class="h5">Perfect fit</h3><p class="section-sub">Free size guide and exchanges</p></div>
+      <div class="col-6 col-md-3 perk"><div class="ico">&#9992;</div><h3 class="h5">Fast delivery</h3><p class="section-sub">2 to 4 days in most cities</p></div>
+      <div class="col-6 col-md-3 perk"><div class="ico">&#9919;</div><h3 class="h5">Discreet</h3><p class="section-sub">Plain box, plain billing name</p></div>
+      <div class="col-6 col-md-3 perk"><div class="ico">&#8635;</div><h3 class="h5">Easy returns</h3><p class="section-sub">30 days on unworn items</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-blush" id="reviews">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">What customers say</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="my-2">The lace is soft and the band stays put all day. Best bra I own.</p><strong>Nadia R.</strong></div></div>
+      <div class="col-md-4"><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="my-2">Sizing was spot on and the packaging was completely plain. Will order again.</p><strong>Priya S.</strong></div></div>
+      <div class="col-md-4"><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="my-2">Gorgeous satin robe. Arrived in two days, slightly long on me.</p><strong>Mei L.</strong></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container text-center">
+    <h2 class="section-title">Get 10% off your first order</h2>
+    <p class="section-sub mb-4">Join the list for new drops and private sales.</p>
+    <form class="row justify-content-center g-2" onsubmit="event.preventDefault();this.querySelector('button').textContent='You are in!';">
+      <div class="col-md-5"><input type="email" class="form-control pill" placeholder="Your email address" required aria-label="Email"></div>
+      <div class="col-auto"><button class="btn btn-hot">Join now</button></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4"><h5 class="brand fs-3 fst-italic" style="color:var(--rose)">Velvet Rose</h5><p>Lingerie designed to make you feel as good as you look.</p></div>
+      <div class="col-6 col-md-2"><h5>Shop</h5><p><a href="#products">Bras</a><br><a href="#products">Panties</a><br><a href="#products">Sets</a><br><a href="#products">Sleepwear</a></p></div>
+      <div class="col-6 col-md-3"><h5>Help</h5><p><a href="#">Size guide</a><br><a href="#">Shipping</a><br><a href="#">Returns</a><br><a href="#">FAQ</a></p></div>
+      <div class="col-md-3"><h5>Contact</h5><p>hello@velvetrose.example<br>+000 000 000 000</p></div>
+    </div>
+    <hr style="border-color:#ffffff22">
+    <p class="text-center small mb-0">&copy; 2026 Velvet Rose. Customers must be 18 or older.</p>
+  </div>
+</footer>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cart">
+  <div class="offcanvas-header"><h5 class="offcanvas-title brand">Your cart</h5><button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
+  <div class="offcanvas-body d-flex flex-column">
+    <div id="cartItems" class="flex-grow-1"></div>
+    <div class="d-flex justify-content-between fs-5 fw-semibold my-3"><span>Total</span><span id="total" class="price">$0.00</span></div>
+    <button class="btn btn-hot w-100" onclick="alert('Connect your payment gateway here (Stripe, PayPal, etc).')">Checkout</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Replace the gradient tiles with real photos by adding an "img" field and an <img> in the card.
+const SHAPES = {
+  Bras:'<svg viewBox="0 0 100 70" fill="#fff"><path d="M8 8c10 0 18 4 22 14 4-10 10-14 20-14s16 4 20 14c4-10 12-14 22-14 0 30-14 46-42 46S8 38 8 8z"/></svg>',
+  Panties:'<svg viewBox="0 0 100 70" fill="#fff"><path d="M4 8h92c-4 20-16 30-30 56H34C20 38 8 28 4 8z"/></svg>',
+  Sets:'<svg viewBox="0 0 100 100" fill="#fff"><path d="M12 6c8 0 14 3 17 10 3-7 9-10 17-10 0 20-8 30-17 30S12 26 12 6zM54 6c8 0 14 3 17 10 3-7 9-10 17-10 0 20-8 30-17 30S54 26 54 6zM20 60h60c-3 14-12 20-22 34H42C32 80 23 74 20 60z"/></svg>',
+  Sleepwear:'<svg viewBox="0 0 100 100" fill="#fff"><path d="M30 4l12 10h16L70 4l10 14-8 80H28L20 18z"/></svg>'
+};
+const BG = ['#ff2e8a,#a10555','#ff8fc3,#e0227c','#7a0f48,#2a0618','#ffb3d6,#ff5aa5','#e0227c,#4a0d2e','#ff6fb1,#b3005f'];
+const PRODUCTS = [
+  {n:'Rose Lace Push-Up Bra',c:'Bras',p:34,o:48,t:'Best seller',col:['#ff2e8a','#000','#fff']},
+  {n:'Midnight Satin Balconette',c:'Bras',p:39,col:['#2a0618','#ff2e8a']},
+  {n:'Blush Bralette',c:'Bras',p:26,o:32,t:'Sale',col:['#ffd9ea','#ff6fb1']},
+  {n:'Scarlet Lace Thong',c:'Panties',p:14,col:['#ff2e8a','#000']},
+  {n:'Silk Touch Brazilian Brief',c:'Panties',p:16,o:20,t:'Sale',col:['#ffb3d6','#4a0d2e']},
+  {n:'Everyday Cotton Boyshort',c:'Panties',p:12,col:['#fff','#ff6fb1','#000']},
+  {n:'Velvet Rose Lace Set',c:'Sets',p:58,o:75,t:'Buy 2 get 1',col:['#ff2e8a','#4a0d2e']},
+  {n:'Pink Satin Trim Set',c:'Sets',p:52,t:'New',col:['#ff8fc3','#fff']},
+  {n:'Noir Mesh Bodysuit Set',c:'Sets',p:64,col:['#000','#ff2e8a']},
+  {n:'Satin Kimono Robe',c:'Sleepwear',p:46,col:['#ff6fb1','#2a0618']},
+  {n:'Lace Trim Chemise',c:'Sleepwear',p:38,o:49,t:'Sale',col:['#ff2e8a','#fff']},
+  {n:'Silk Slip Nightdress',c:'Sleepwear',p:55,t:'New',col:['#ffd9ea','#b3005f']}
+];
+let cart = [];
+const money = v => '$' + v.toFixed(2);
+
+function render(filter='All'){
+  const list = PRODUCTS.map((x,i)=>({...x,i})).filter(x=>filter==='All'||x.c===filter);
+  document.getElementById('grid').innerHTML = list.map(x=>`
+    <div class="col-6 col-lg-3"><article class="product">
+      <div class="p-img" style="background:linear-gradient(160deg,${BG[x.i%BG.length]})">
+        ${x.t?`<span class="badge-tag">${x.t}</span>`:''}${SHAPES[x.c]}
+      </div>
+      <div class="p-body">
+        <h3>${x.n}</h3>
+        <div class="mb-2">${x.col.map(c=>`<span class="swatch" style="background:${c}"></span>`).join('')}</div>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="price">${money(x.p)}${x.o?`<s>${money(x.o)}</s>`:''}</span>
+          <button class="btn btn-hot btn-sm px-3" onclick="add(${x.i})">Add</button>
+        </div>
+      </div></article></div>`).join('');
+}
+function add(i){
+  const f = cart.find(c=>c.i===i);
+  f ? f.q++ : cart.push({i,q:1});
+  draw();
+}
+function change(i,d){
+  const f = cart.find(c=>c.i===i); f.q += d;
+  cart = cart.filter(c=>c.q>0); draw();
+}
+function draw(){
+  document.getElementById('count').textContent = cart.reduce((s,c)=>s+c.q,0);
+  document.getElementById('total').textContent = money(cart.reduce((s,c)=>s+c.q*PRODUCTS[c.i].p,0));
+  document.getElementById('cartItems').innerHTML = cart.length ? cart.map(c=>`
+    <div class="cart-item"><div><strong>${PRODUCTS[c.i].n}</strong><br><span class="price">${money(PRODUCTS[c.i].p)}</span></div>
+    <div class="btn-group btn-group-sm"><button class="btn btn-outline-danger" onclick="change(${c.i},-1)">-</button>
+    <span class="btn disabled">${c.q}</span><button class="btn btn-outline-danger" onclick="change(${c.i},1)">+</button></div></div>`).join('')
+    : '<p class="section-sub">Your cart is empty. Add something you love.</p>';
+}
+function setFilter(f){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.toggle('active',b.dataset.f===f));
+  render(f);
+}
+document.querySelectorAll('.filter-btn').forEach(b=>b.onclick=()=>setFilter(b.dataset.f));
+document.querySelectorAll('[data-go]').forEach(a=>a.addEventListener('click',()=>setFilter(a.dataset.go)));
+render(); draw();
+</script>
+</body>
+</html>
