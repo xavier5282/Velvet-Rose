@@ -1,211 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Velvet Rose | Lingerie & Intimates</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,700;1,800&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5b1027">
+  <meta name="description" content="Discover thoughtfully chosen lingerie, intimates and nightwear at Velvet-Rose. Find your fit and enjoy discreet delivery.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VELVET-ROSE | Feel Beautiful. Feel Confident. Feel You.">
+  <meta property="og:description" content="Intimate essentials designed to celebrate your beauty, confidence and individuality.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=85">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>VELVET-ROSE | Luxury Lingerie & Intimates</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "OnlineStore",
+    "name": "VELVET-ROSE",
+    "description": "Lingerie, nightwear and intimate essentials designed for confidence and comfort.",
+    "slogan": "Feel Beautiful. Feel Confident. Feel You."
+  }
+  </script>
+  <script src="app.js" defer></script>
 </head>
 <body>
-
-<div class="topbar text-center py-2">Free delivery over $60 &nbsp;|&nbsp; Discreet packaging on every order</div>
-
-<nav class="navbar navbar-expand-lg sticky-top">
-  <div class="container">
-    <a class="navbar-brand brand" href="#top">Velvet Rose</a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link" href="#categories">Shop</a></li>
-        <li class="nav-item"><a class="nav-link" href="#products">Best sellers</a></li>
-        <li class="nav-item"><a class="nav-link" href="#sale">Sale</a></li>
-        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-      <button class="btn cart-btn" data-bs-toggle="offcanvas" data-bs-target="#cart">Cart<span class="cart-count" id="count">0</span></button>
-    </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement" aria-label="Store announcements">
+    <span>Discover Your Confidence — New Collection Available</span>
+    <span class="announcement-detail">Complimentary delivery over $75 <i aria-hidden="true">·</i> Discreet packaging, always</span>
   </div>
-</nav>
-
-<header class="hero" id="top">
-  <div class="container hero-inner">
-    <div class="row"><div class="col-lg-7">
-      <h1>Wear the confidence.</h1>
-      <p class="my-4">Lace, satin and silk made to fit close and feel incredible. New season collection, sizes XS to 3XL.</p>
-      <a href="#products" class="btn btn-hot btn-lg me-2">Shop the collection</a>
-      <a href="#sale" class="btn btn-ghost btn-lg">See sale</a>
-    </div></div>
-  </div>
-</header>
-
-<section class="section" id="categories">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="section-title">Find your fit</h2>
-      <p class="section-sub">Four ways to start</p>
-    </div>
-    <div class="row g-4">
-      <div class="col-6 col-lg-3"><a href="#products" class="cat cat-1" data-go="Bras"><div><h3>Bras</h3><small>Push-up, balconette, bralette</small></div></a></div>
-      <div class="col-6 col-lg-3"><a href="#products" class="cat cat-2" data-go="Panties"><div><h3>Panties</h3><small>Thongs, briefs, boyshorts</small></div></a></div>
-      <div class="col-6 col-lg-3"><a href="#products" class="cat cat-3" data-go="Sets"><div><h3>Sets</h3><small>Matching lace and satin</small></div></a></div>
-      <div class="col-6 col-lg-3"><a href="#products" class="cat cat-4" data-go="Sleepwear"><div><h3>Sleepwear</h3><small>Robes, chemises, slips</small></div></a></div>
-    </div>
-  </div>
-</section>
-
-<section class="section bg-blush" id="products">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h2 class="section-title">Best sellers</h2>
-      <p class="section-sub">Loved by thousands of customers</p>
-      <div id="filters">
-        <button class="filter-btn active" data-f="All">All</button>
-        <button class="filter-btn" data-f="Bras">Bras</button>
-        <button class="filter-btn" data-f="Panties">Panties</button>
-        <button class="filter-btn" data-f="Sets">Sets</button>
-        <button class="filter-btn" data-f="Sleepwear">Sleepwear</button>
+  <header class="site-header">
+    <nav class="navigation container" aria-label="Main navigation">
+      <a class="wordmark" href="#home" aria-label="Velvet-Rose home">VELVET<span>—</span>ROSE<small>FEEL BEAUTIFUL. FEEL YOU.</small></a>
+      <button class="menu-toggle icon-button" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu"><span></span><span></span></button>
+      <div class="navigation-links" id="primary-menu">
+        <a href="#home">Home</a><a href="#categories">Shop all</a><a href="#products">Lingerie</a>
+        <a href="#categories">Bras &amp; panties</a><a href="#categories">Nightwear</a>
+        <a href="#categories">Wellness</a><a href="#products" data-filter-link="New arrivals">New arrivals</a><a href="#offers">Offers</a>
       </div>
-    </div>
-    <div class="row g-4" id="grid"></div>
-  </div>
-</section>
-
-<section class="section" id="sale">
-  <div class="container">
-    <div class="promo text-center">
-      <h2>Buy 2, get 1 free</h2>
-      <p class="mb-4">On all lace sets this week. Use code <strong>ROSE3</strong> at checkout.</p>
-      <a href="#products" class="btn btn-ghost btn-lg">Shop lace sets</a>
-    </div>
-  </div>
-</section>
-
-<section class="section pt-0">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-6 col-md-3 perk"><div class="ico">&#9829;</div><h3 class="h5">Perfect fit</h3><p class="section-sub">Free size guide and exchanges</p></div>
-      <div class="col-6 col-md-3 perk"><div class="ico">&#9992;</div><h3 class="h5">Fast delivery</h3><p class="section-sub">2 to 4 days in most cities</p></div>
-      <div class="col-6 col-md-3 perk"><div class="ico">&#9919;</div><h3 class="h5">Discreet</h3><p class="section-sub">Plain box, plain billing name</p></div>
-      <div class="col-6 col-md-3 perk"><div class="ico">&#8635;</div><h3 class="h5">Easy returns</h3><p class="section-sub">30 days on unworn items</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section bg-blush" id="reviews">
-  <div class="container">
-    <h2 class="section-title text-center mb-5">What customers say</h2>
-    <div class="row g-4">
-      <div class="col-md-4"><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="my-2">The lace is soft and the band stays put all day. Best bra I own.</p><strong>Nadia R.</strong></div></div>
-      <div class="col-md-4"><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="my-2">Sizing was spot on and the packaging was completely plain. Will order again.</p><strong>Priya S.</strong></div></div>
-      <div class="col-md-4"><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="my-2">Gorgeous satin robe. Arrived in two days, slightly long on me.</p><strong>Mei L.</strong></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="contact">
-  <div class="container text-center">
-    <h2 class="section-title">Get 10% off your first order</h2>
-    <p class="section-sub mb-4">Join the list for new drops and private sales.</p>
-    <form class="row justify-content-center g-2" onsubmit="event.preventDefault();this.querySelector('button').textContent='You are in!';">
-      <div class="col-md-5"><input type="email" class="form-control pill" placeholder="Your email address" required aria-label="Email"></div>
-      <div class="col-auto"><button class="btn btn-hot">Join now</button></div>
+      <div class="nav-actions">
+        <button class="icon-button search-open" type="button" aria-label="Search products">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+        </button>
+        <a class="icon-button account-link" href="#privacy" aria-label="Your privacy"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 21c.4-4.1 2.8-6.2 7-6.2s6.6 2.1 7 6.2"></path></svg></a>
+        <button class="icon-button wishlist-open" type="button" aria-label="View wishlist">♡<span class="sr-only">Wishlist</span></button>
+        <button class="bag-button" type="button" data-open-cart aria-label="Open shopping bag">BAG <span class="cart-count" id="cart-count">0</span></button>
+      </div>
+    </nav>
+    <form class="search-panel container" id="search-form" role="search" hidden>
+      <label class="sr-only" for="site-search">Search products</label>
+      <input id="site-search" type="search" placeholder="Search lingerie, nightwear and more…" autocomplete="off">
+      <button class="text-button" type="submit">Search</button>
+      <button class="search-close icon-button" type="button" aria-label="Close search">×</button>
     </form>
-  </div>
-</section>
+  </header>
 
-<footer>
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-md-4"><h5 class="brand fs-3 fst-italic" style="color:var(--rose)">Velvet Rose</h5><p>Lingerie designed to make you feel as good as you look.</p></div>
-      <div class="col-6 col-md-2"><h5>Shop</h5><p><a href="#products">Bras</a><br><a href="#products">Panties</a><br><a href="#products">Sets</a><br><a href="#products">Sleepwear</a></p></div>
-      <div class="col-6 col-md-3"><h5>Help</h5><p><a href="#">Size guide</a><br><a href="#">Shipping</a><br><a href="#">Returns</a><br><a href="#">FAQ</a></p></div>
-      <div class="col-md-3"><h5>Contact</h5><p>hello@velvetrose.example<br>+000 000 000 000</p></div>
-    </div>
-    <hr style="border-color:#ffffff22">
-    <p class="text-center small mb-0">&copy; 2026 Velvet Rose. Customers must be 18 or older.</p>
-  </div>
-</footer>
-
-<div class="offcanvas offcanvas-end" tabindex="-1" id="cart">
-  <div class="offcanvas-header"><h5 class="offcanvas-title brand">Your cart</h5><button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
-  <div class="offcanvas-body d-flex flex-column">
-    <div id="cartItems" class="flex-grow-1"></div>
-    <div class="d-flex justify-content-between fs-5 fw-semibold my-3"><span>Total</span><span id="total" class="price">$0.00</span></div>
-    <button class="btn btn-hot w-100" onclick="alert('Connect your payment gateway here (Stripe, PayPal, etc).')">Checkout</button>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-// Replace the gradient tiles with real photos by adding an "img" field and an <img> in the card.
-const SHAPES = {
-  Bras:'<svg viewBox="0 0 100 70" fill="#fff"><path d="M8 8c10 0 18 4 22 14 4-10 10-14 20-14s16 4 20 14c4-10 12-14 22-14 0 30-14 46-42 46S8 38 8 8z"/></svg>',
-  Panties:'<svg viewBox="0 0 100 70" fill="#fff"><path d="M4 8h92c-4 20-16 30-30 56H34C20 38 8 28 4 8z"/></svg>',
-  Sets:'<svg viewBox="0 0 100 100" fill="#fff"><path d="M12 6c8 0 14 3 17 10 3-7 9-10 17-10 0 20-8 30-17 30S12 26 12 6zM54 6c8 0 14 3 17 10 3-7 9-10 17-10 0 20-8 30-17 30S54 26 54 6zM20 60h60c-3 14-12 20-22 34H42C32 80 23 74 20 60z"/></svg>',
-  Sleepwear:'<svg viewBox="0 0 100 100" fill="#fff"><path d="M30 4l12 10h16L70 4l10 14-8 80H28L20 18z"/></svg>'
-};
-const BG = ['#ff2e8a,#a10555','#ff8fc3,#e0227c','#7a0f48,#2a0618','#ffb3d6,#ff5aa5','#e0227c,#4a0d2e','#ff6fb1,#b3005f'];
-const PRODUCTS = [
-  {n:'Rose Lace Push-Up Bra',c:'Bras',p:34,o:48,t:'Best seller',col:['#ff2e8a','#000','#fff']},
-  {n:'Midnight Satin Balconette',c:'Bras',p:39,col:['#2a0618','#ff2e8a']},
-  {n:'Blush Bralette',c:'Bras',p:26,o:32,t:'Sale',col:['#ffd9ea','#ff6fb1']},
-  {n:'Scarlet Lace Thong',c:'Panties',p:14,col:['#ff2e8a','#000']},
-  {n:'Silk Touch Brazilian Brief',c:'Panties',p:16,o:20,t:'Sale',col:['#ffb3d6','#4a0d2e']},
-  {n:'Everyday Cotton Boyshort',c:'Panties',p:12,col:['#fff','#ff6fb1','#000']},
-  {n:'Velvet Rose Lace Set',c:'Sets',p:58,o:75,t:'Buy 2 get 1',col:['#ff2e8a','#4a0d2e']},
-  {n:'Pink Satin Trim Set',c:'Sets',p:52,t:'New',col:['#ff8fc3','#fff']},
-  {n:'Noir Mesh Bodysuit Set',c:'Sets',p:64,col:['#000','#ff2e8a']},
-  {n:'Satin Kimono Robe',c:'Sleepwear',p:46,col:['#ff6fb1','#2a0618']},
-  {n:'Lace Trim Chemise',c:'Sleepwear',p:38,o:49,t:'Sale',col:['#ff2e8a','#fff']},
-  {n:'Silk Slip Nightdress',c:'Sleepwear',p:55,t:'New',col:['#ffd9ea','#b3005f']}
-];
-let cart = [];
-const money = v => '$' + v.toFixed(2);
-
-function render(filter='All'){
-  const list = PRODUCTS.map((x,i)=>({...x,i})).filter(x=>filter==='All'||x.c===filter);
-  document.getElementById('grid').innerHTML = list.map(x=>`
-    <div class="col-6 col-lg-3"><article class="product">
-      <div class="p-img" style="background:linear-gradient(160deg,${BG[x.i%BG.length]})">
-        ${x.t?`<span class="badge-tag">${x.t}</span>`:''}${SHAPES[x.c]}
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=2000&q=88" alt="Elegant fashion editorial in warm rose tones" fetchpriority="high">
+      <div class="hero-scrim"></div>
+      <div class="hero-copy container">
+        <p class="eyebrow">THE NEW SEASON · 2026</p>
+        <h1 id="hero-title">Unveil Your<br><em>Inner Elegance</em></h1>
+        <p class="hero-description">Discover intimate essentials designed to celebrate your beauty, confidence, and individuality.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#products">Shop collection</a><a class="button button-outline" href="#products" data-filter-link="New arrivals">Explore new arrivals</a></div>
+        <p class="hero-note">Beautifully considered. Thoughtfully delivered.</p>
       </div>
-      <div class="p-body">
-        <h3>${x.n}</h3>
-        <div class="mb-2">${x.col.map(c=>`<span class="swatch" style="background:${c}"></span>`).join('')}</div>
-        <div class="d-flex justify-content-between align-items-center">
-          <span class="price">${money(x.p)}${x.o?`<s>${money(x.o)}</s>`:''}</span>
-          <button class="btn btn-hot btn-sm px-3" onclick="add(${x.i})">Add</button>
+      <span class="hero-side-note" aria-hidden="true">A LITTLE LUXURY, JUST FOR YOU</span>
+    </section>
+
+    <div class="trust-strip" aria-label="Shopping promises"><span>Thoughtful fit</span><i>✳</i><span>Private by design</span><i>✳</i><span>Discreet delivery</span><i>✳</i><span>Made for you</span></div>
+
+    <section class="section container" id="categories" aria-labelledby="categories-title">
+      <div class="section-heading"><p class="eyebrow">FIND YOUR FEELING</p><h2 id="categories-title">A little something <em>for you</em></h2><p>Explore the pieces that make your everyday feel extraordinary.</p></div>
+      <div class="category-grid">
+        <a class="category-card category-tall" href="#products" data-category="Lingerie Sets"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy"><span class="category-overlay"></span><span class="category-caption"><small>THE ART OF MATCHING</small><strong>Lingerie Sets</strong><span>Discover the edit ↗</span></span></a>
+        <a class="category-card" href="#products" data-category="Bras"><img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy"><span class="category-overlay"></span><span class="category-caption"><small>YOUR EVERYDAY ICON</small><strong>Bras</strong><span>Discover the edit ↗</span></span></a>
+        <a class="category-card" href="#products" data-category="Panties"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy"><span class="category-overlay"></span><span class="category-caption"><small>SOFT ON YOUR SKIN</small><strong>Panties</strong><span>Discover the edit ↗</span></span></a>
+        <a class="category-card" href="#products" data-category="Nightwear"><img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy"><span class="category-overlay"></span><span class="category-caption"><small>SLOW DOWN IN STYLE</small><strong>Nightwear</strong><span>Discover the edit ↗</span></span></a>
+        <a class="category-card" href="#products" data-category="Shapewear"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy"><span class="category-overlay"></span><span class="category-caption"><small>SMOOTH, NEVER RESTRICT</small><strong>Shapewear</strong><span>Discover the edit ↗</span></span></a>
+        <a class="category-card" href="#products" data-category="Personal Wellness"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy"><span class="category-overlay"></span><span class="category-caption"><small>CARE, YOUR WAY</small><strong>Personal Wellness</strong><span>Discover the edit ↗</span></span></a>
+      </div>
+    </section>
+
+    <section class="section products-section" id="products" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">THE VELVET EDIT</p><h2 id="products-title">Favourites, <em>for a reason</em></h2><p>Intimate essentials chosen for the way they feel as much as the way they look.</p></div>
+        <div class="filter-row" id="filters" aria-label="Filter products">
+          <button type="button" class="filter-chip is-active" data-filter="All">All pieces</button>
+          <button type="button" class="filter-chip" data-filter="Lingerie Sets">Lingerie sets</button>
+          <button type="button" class="filter-chip" data-filter="Bras">Bras</button>
+          <button type="button" class="filter-chip" data-filter="Panties">Panties</button>
+          <button type="button" class="filter-chip" data-filter="Nightwear">Nightwear</button>
+          <button type="button" class="filter-chip" data-filter="Shapewear">Shapewear</button>
+          <button type="button" class="filter-chip" data-filter="Personal Wellness">Personal wellness</button>
+          <button type="button" class="filter-chip" data-filter="New arrivals">New arrivals</button>
         </div>
-      </div></article></div>`).join('');
-}
-function add(i){
-  const f = cart.find(c=>c.i===i);
-  f ? f.q++ : cart.push({i,q:1});
-  draw();
-}
-function change(i,d){
-  const f = cart.find(c=>c.i===i); f.q += d;
-  cart = cart.filter(c=>c.q>0); draw();
-}
-function draw(){
-  document.getElementById('count').textContent = cart.reduce((s,c)=>s+c.q,0);
-  document.getElementById('total').textContent = money(cart.reduce((s,c)=>s+c.q*PRODUCTS[c.i].p,0));
-  document.getElementById('cartItems').innerHTML = cart.length ? cart.map(c=>`
-    <div class="cart-item"><div><strong>${PRODUCTS[c.i].n}</strong><br><span class="price">${money(PRODUCTS[c.i].p)}</span></div>
-    <div class="btn-group btn-group-sm"><button class="btn btn-outline-danger" onclick="change(${c.i},-1)">-</button>
-    <span class="btn disabled">${c.q}</span><button class="btn btn-outline-danger" onclick="change(${c.i},1)">+</button></div></div>`).join('')
-    : '<p class="section-sub">Your cart is empty. Add something you love.</p>';
-}
-function setFilter(f){
-  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.toggle('active',b.dataset.f===f));
-  render(f);
-}
-document.querySelectorAll('.filter-btn').forEach(b=>b.onclick=()=>setFilter(b.dataset.f));
-document.querySelectorAll('[data-go]').forEach(a=>a.addEventListener('click',()=>setFilter(a.dataset.go)));
-render(); draw();
-</script>
+        <p class="search-status" id="search-status" aria-live="polite"></p>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="story-section" aria-labelledby="story-title">
+      <div class="story-image"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=85" alt="A quiet moment of self-confidence and personal style" loading="lazy"></div>
+      <div class="story-copy"><p class="eyebrow">A NOTE FROM US</p><h2 id="story-title">Beauty Begins<br>With <em>Confidence</em></h2><p>At Velvet-Rose, we believe every woman deserves to feel beautiful, comfortable, and confident. Our carefully selected collections bring together elegance, comfort, and personal expression.</p><a class="text-link" href="#privacy">Made with you in mind <span aria-hidden="true">→</span></a></div>
+    </section>
+
+    <section class="section promise-section" aria-labelledby="promise-title">
+      <div class="container"><div class="section-heading"><p class="eyebrow">THE VELVET-ROSE DIFFERENCE</p><h2 id="promise-title">Considered in <em>every detail</em></h2></div>
+        <div class="promise-grid">
+          <article class="promise"><span class="promise-mark" aria-hidden="true">✳</span><h3>Premium quality</h3><p>Soft-touch fabrics and thoughtfully considered details.</p></article>
+          <article class="promise"><span class="promise-mark" aria-hidden="true">♡</span><h3>Comfort comes first</h3><p>Beautiful pieces made to feel like they belong to you.</p></article>
+          <article class="promise"><span class="promise-mark" aria-hidden="true">⌑</span><h3>Discreet delivery</h3><p>Every parcel is plain, private, and carefully packed.</p></article>
+          <article class="promise"><span class="promise-mark" aria-hidden="true">◈</span><h3>Your privacy matters</h3><p>Your intimate choices deserve thoughtful care.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer-section" id="offers" aria-labelledby="offer-title">
+      <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1800&q=80" alt="" loading="lazy">
+      <div class="offer-scrim"></div><div class="offer-copy"><p class="eyebrow">A LITTLE SOMETHING EXTRA</p><h2 id="offer-title">Your first order,<br><em>10% more lovely.</em></h2><p>Use code <strong>ROSE10</strong> at checkout. Complimentary delivery over $75.</p><a class="button button-gold" href="#products">Find your favourite</a></div>
+    </section>
+
+    <section class="newsletter-section" aria-labelledby="newsletter-title">
+      <div class="container newsletter-inner"><p class="eyebrow">A NOTE FROM VELVET-ROSE</p><h2 id="newsletter-title">Join The <em>Velvet Circle</em></h2><p>Get exclusive offers, new collection updates, and special surprises.</p><form class="newsletter-form" id="newsletter-form"><label class="sr-only" for="newsletter-email">Your email address</label><input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="Your email address" required><button class="button button-dark" type="submit">Stay in the know</button></form><p class="newsletter-disclaimer" id="newsletter-message" aria-live="polite">A private preview: newsletter sign-up is not connected yet. Your email won't be stored or sent.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="wordmark wordmark-light" href="#home">VELVET<span>—</span>ROSE<small>FEEL BEAUTIFUL. FEEL YOU.</small></a><p>A little more comfort. A little more confidence. Always, a little more you.</p><p class="discreet-note">Packed with care. Delivered discreetly.</p></div>
+      <div><h2>Explore</h2><a href="#categories">Shop all</a><a href="#products">New arrivals</a><a href="#offers">Offers</a><a href="#products">Personal wellness</a></div>
+      <div><h2>Here to help</h2><a href="policies.html#shipping">Shipping information</a><a href="policies.html#returns">Returns &amp; exchanges</a><a href="policies.html#size-guide">Size guide</a><a href="policies.html#faq">FAQs</a></div>
+      <div><h2>Our promise</h2><a href="#story-title">About Velvet-Rose</a><a href="policies.html#contact">Contact us</a><a href="policies.html#privacy" id="privacy">Privacy policy</a><a href="policies.html#terms">Terms &amp; conditions</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="current-year">2026</span> VELVET-ROSE. All rights reserved.</span><span>Thoughtfully chosen. Privately delivered.</span><a href="admin.html" class="admin-link">Store administration</a></div>
+  </footer>
+
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="detail-title">
+    <button class="dialog-close" type="button" data-close-dialog aria-label="Close product details">×</button>
+    <div class="detail-layout"><div class="gallery">
+      <div class="gallery-main"><img id="detail-image" alt="" hidden><button class="gallery-arrow gallery-previous" type="button" aria-label="Previous image">‹</button><button class="gallery-arrow gallery-next" type="button" aria-label="Next image">›</button><span class="gallery-counter" id="gallery-counter"></span></div>
+      <div class="gallery-thumbnails" id="gallery-thumbnails" aria-label="Product images"></div>
+    </div><div class="detail-copy">
+      <p class="eyebrow" id="detail-category"></p><h2 id="detail-title"></h2><p class="detail-price" id="detail-price"></p><p id="detail-description"></p>
+      <label class="field-label" id="size-label" for="detail-size">Select a size <span>*</span></label><select class="select-field" id="detail-size"></select>
+      <label class="field-label" for="detail-color">Color <span>*</span></label><select class="select-field" id="detail-color"></select>
+      <label class="field-label" for="detail-quantity">Quantity</label><input class="select-field quantity-input" id="detail-quantity" type="number" min="1" max="10" value="1">
+      <p class="detail-material" id="detail-material"></p><p class="detail-shipping">Complimentary delivery over $75. Carefully packed in discreet, unbranded packaging.</p>
+      <button class="button button-dark detail-add" type="button" id="detail-add">Add to bag</button>
+      <button class="text-button detail-wishlist" type="button" id="detail-wishlist">♡ Save to wishlist</button>
+      <p class="detail-size-note">Need a little help? <a href="policies.html#size-guide">Visit our size guide.</a></p>
+    </div></div>
+  </dialog>
+
+  <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="drawer-header"><div><p class="eyebrow">YOUR LITTLE LUXURY</p><h2 id="cart-title">Your bag <span id="cart-drawer-count"></span></h2></div><button class="dialog-close" type="button" data-close-dialog aria-label="Close shopping bag">×</button></div>
+    <div class="cart-lines" id="cart-lines"></div>
+    <form class="discount-form" id="discount-form"><label for="discount-code">Have a little code?</label><div><input id="discount-code" type="text" placeholder="Enter code" autocomplete="off"><button type="submit" class="button button-dark">Apply</button></div><p id="discount-message" aria-live="polite"></p></form>
+    <div class="cart-totals"><p><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></p><p><span>Delivery</span><strong id="cart-shipping">$0.00</strong></p><p class="discount-line" id="cart-discount-line" hidden><span>Discount</span><strong id="cart-discount"></strong></p><p class="cart-total"><span>Total</span><strong id="cart-total">$0.00</strong></p></div>
+    <p class="discreet-note cart-privacy">Your bag stays on this device. Orders are not transmitted by this static preview.</p>
+    <button class="button button-gold checkout-open" id="checkout-open" type="button">Continue to checkout</button>
+  </dialog>
+
+  <dialog class="checkout-dialog" id="checkout-dialog" aria-labelledby="checkout-title">
+    <div class="drawer-header"><div><p class="eyebrow">PRIVATE BY DESIGN</p><h2 id="checkout-title">A few final details</h2></div><button class="dialog-close" type="button" data-close-dialog aria-label="Close checkout">×</button></div>
+    <p class="preview-notice">Checkout preview only. This static site cannot securely transmit or save orders. No information entered here will be sent or stored.</p>
+    <form id="checkout-form" class="checkout-form">
+      <label for="customer-name">Full name</label><input id="customer-name" name="name" autocomplete="name" required>
+      <label for="customer-phone">Phone number</label><input id="customer-phone" name="phone" type="tel" autocomplete="tel" required>
+      <label for="customer-email">Email</label><input id="customer-email" name="email" type="email" autocomplete="email" required>
+      <label for="customer-address">Full address</label><textarea id="customer-address" name="address" autocomplete="street-address" rows="2" required></textarea>
+      <label for="customer-district">District</label><input id="customer-district" name="district" autocomplete="address-level1" required>
+      <label for="customer-notes">Special instructions <span>(optional)</span></label><textarea id="customer-notes" name="notes" rows="2"></textarea>
+      <fieldset><legend>Payment</legend><label class="payment-choice"><input type="radio" name="payment" value="cod" checked> Cash on delivery</label><label class="payment-choice disabled-choice"><input type="radio" name="payment" value="online" disabled> Online payment <span>Not available in this preview</span></label></fieldset>
+      <p class="checkout-total">Preview total <strong id="checkout-total">$0.00</strong></p>
+      <button class="button button-dark" type="submit">Review sample order</button>
+    </form>
+    <p class="checkout-result" id="checkout-result" aria-live="polite" hidden></p>
+  </dialog>
+
+  <dialog class="wishlist-dialog" id="wishlist-dialog" aria-labelledby="wishlist-title">
+    <div class="drawer-header"><div><p class="eyebrow">YOUR PERSONAL EDIT</p><h2 id="wishlist-title">Saved pieces</h2></div><button class="dialog-close" type="button" data-close-dialog aria-label="Close wishlist">×</button></div>
+    <div id="wishlist-items"></div><p class="discreet-note">Your saved pieces stay in this browser only.</p>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
