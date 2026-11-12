@@ -1,142 +1,85 @@
 const PRODUCTS = [
   {
-    id: "rose-lace-set",
-    name: "The Rose Lace Set",
-    category: "Lingerie Sets",
-    price: 68,
-    was: 84,
+    id: "romance-emerald-set",
+    name: "Romance Emerald Nightwear",
+    category: "Nightwear",
+    price: 89,
+    was: 119,
     badge: "Bestseller",
     isNew: false,
-    description: "An easy-to-love pairing with delicate lace and considered, comfortable support.",
-    material: "Soft stretch lace · Adjustable straps · Gentle-care recommended",
+    description: "An elegant sheer gown with soft lace detailing and a romantic, graceful drape.",
+    material: "Sheer mesh · Lace trim · Adjustable ties",
     sizes: ["XS", "S", "M", "L", "XL"],
-    colors: [{ name: "Rose", hex: "#9b465a" }, { name: "Black", hex: "#251e20" }, { name: "Ivory", hex: "#f0e5d7" }],
-    images: [
-      "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=950&q=85"
-    ]
+    colors: [{ name: "Emerald", hex: "#0d4f46" }, { name: "Ivory", hex: "#f2e8df" }],
+    images: ["assets/images/products/romance_3x%20(1).jpeg"]
   },
   {
-    id: "silk-balconette",
-    name: "Silk-Soft Balconette",
-    category: "Bras",
-    price: 46,
-    was: 58,
+    id: "romance-navy-set",
+    name: "Romance Navy Nightwear",
+    category: "Nightwear",
+    price: 94,
     badge: "New arrival",
     isNew: true,
-    description: "A graceful everyday shape in silky-soft fabric, designed for an effortless, flattering fit.",
-    material: "Silky microfibre · Adjustable shoulder straps · Hook-and-eye fastening",
-    sizes: ["30B", "30C", "32B", "32C", "32D", "34B", "34C", "36B", "36C"],
-    colors: [{ name: "Rose", hex: "#a14f60" }, { name: "Midnight", hex: "#292228" }],
-    images: [
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=950&q=85"
-    ]
+    description: "A romantic navy lace silhouette designed for soft, sensual evenings and beautiful rituals.",
+    material: "Sheer lace · Satin lining · Adjustable straps",
+    sizes: ["XS", "S", "M", "L", "XL"],
+    colors: [{ name: "Navy", hex: "#0b1b4a" }, { name: "Black", hex: "#261d20" }],
+    images: ["assets/images/products/romance_3x%20(2).jpeg"]
   },
   {
-    id: "everyday-brief",
-    name: "Everyday Soft Brief",
-    category: "Panties",
-    price: 22,
-    badge: "",
-    isNew: false,
-    description: "A smooth, breathable everyday favourite with a soft-touch finish and no-fuss comfort.",
-    material: "Cotton-modal blend · Smooth flat seams · Machine wash cold",
-    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-    colors: [{ name: "Blush", hex: "#df9fa7" }, { name: "Black", hex: "#251e20" }, { name: "Ivory", hex: "#f0e5d7" }],
-    images: [
-      "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=950&q=85"
-    ]
-  },
-  {
-    id: "satin-robe",
-    name: "The Satin Evening Robe",
+    id: "romance-black-set",
+    name: "Romance Black Nightwear",
     category: "Nightwear",
-    price: 74,
+    price: 96,
+    was: 128,
+    badge: "Limited edit",
+    isNew: false,
+    description: "A dramatic black lace nightpiece with a flowing silhouette and a luxuriously sheer finish.",
+    material: "Mesh chiffon · Lace overlay · Soft stretch trim",
+    sizes: ["XS", "S", "M", "L", "XL"],
+    colors: [{ name: "Black", hex: "#1a1718" }, { name: "Midnight", hex: "#2e2b33" }],
+    images: ["assets/images/products/romance_3x%20(3).jpeg"]
+  },
+  {
+    id: "romancea-emerald-set",
+    name: "Romancea Emerald Lace Set",
+    category: "Nightwear",
+    price: 88,
+    was: 112,
+    badge: "Top pick",
+    isNew: false,
+    description: "A deep emerald lace set with a soft feminine silhouette and delicate layered finish.",
+    material: "Sheer lace · Soft stretch support · Satin bow tie",
+    sizes: ["XS", "S", "M", "L", "XL"],
+    colors: [{ name: "Emerald", hex: "#0c5d4f" }, { name: "Gold", hex: "#d9b375" }],
+    images: ["assets/images/products/romancea_x3%20(1).jpeg"]
+  },
+  {
+    id: "romancea-navy-set",
+    name: "Romancea Navy Lace Set",
+    category: "Nightwear",
+    price: 92,
     badge: "New arrival",
     isNew: true,
-    description: "A light, fluid layer for your slower moments, finished with a self-tie belt and an easy drape.",
-    material: "Recycled satin · Self-tie waist · Relaxed fit",
-    sizes: ["XS/S", "M/L", "XL/XXL"],
-    colors: [{ name: "Champagne", hex: "#c4a276" }, { name: "Rose", hex: "#a14f60" }],
-    images: [
-      "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=950&q=85"
-    ]
-  },
-  {
-    id: "soft-sculpt",
-    name: "Soft Sculpt Short",
-    category: "Shapewear",
-    price: 39,
-    badge: "",
-    isNew: false,
-    description: "A breathable, flexible base layer with a smooth silhouette and room to move.",
-    material: "Light-support stretch knit · Seamless edges · Breathable finish",
-    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-    colors: [{ name: "Mocha", hex: "#8f6552" }, { name: "Black", hex: "#251e20" }],
-    images: [
-      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=950&q=85"
-    ]
-  },
-  {
-    id: "intimate-comfort-wash",
-    name: "Intimate Comfort Wash",
-    category: "Personal Wellness",
-    price: 24,
-    badge: "Gentle care",
-    isNew: false,
-    description: "A gentle, fragrance-free wash for your everyday care ritual. For external use only.",
-    material: "200 ml · Fragrance-free · Vegan formula · External use only",
-    sizes: [],
-    colors: [{ name: "Clear", hex: "#d8c6b6" }],
-    images: [
-      "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=950&q=85"
-    ]
-  },
-  {
-    id: "petal-bralette",
-    name: "Petal Everyday Bralette",
-    category: "Bras",
-    price: 42,
-    badge: "",
-    isNew: false,
-    description: "A soft, wire-free favourite with a relaxed shape and the easy comfort of an everyday layer.",
-    material: "Cotton-modal blend · Wire-free support · Adjustable straps",
+    description: "A navy lace night set with elegant drape, a fitted bust, and a delicately sheer finish.",
+    material: "Stretch lace · Soft cup support · Adjustable straps",
     sizes: ["XS", "S", "M", "L", "XL"],
-    colors: [{ name: "Blush", hex: "#df9fa7" }, { name: "Ivory", hex: "#f0e5d7" }],
-    images: [
-      "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=950&q=85"
-    ]
+    colors: [{ name: "Navy", hex: "#091d4a" }, { name: "Black", hex: "#2a1f20" }],
+    images: ["assets/images/products/romancea_x3%20(2).jpeg"]
   },
   {
-    id: "velvet-slip",
-    name: "Velvet Hour Slip",
+    id: "romancea-black-set",
+    name: "Romancea Black Lace Set",
     category: "Nightwear",
-    price: 82,
-    was: 96,
-    badge: "A little luxury",
+    price: 98,
+    was: 132,
+    badge: "Limited edit",
     isNew: false,
-    description: "A fluid, easy-to-layer slip with a graceful line and adjustable straps for a personal fit.",
-    material: "Recycled satin · Adjustable straps · Relaxed, bias-cut feel",
+    description: "A sleek black lace set with a rich, sculpted shape and an ultra-soft, seductive finish.",
+    material: "Sheer mesh · Lace detail · Soft stretch lining",
     sizes: ["XS", "S", "M", "L", "XL"],
-    colors: [{ name: "Midnight", hex: "#292228" }, { name: "Champagne", hex: "#c4a276" }],
-    images: [
-      "https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1543076447-215ad9ba6923?auto=format&fit=crop&w=950&q=85"
-    ]
+    colors: [{ name: "Black", hex: "#171417" }, { name: "Midnight", hex: "#2d2a32" }],
+    images: ["assets/images/products/romancea_x3%20(3).jpeg"]
   }
 ];
 
@@ -267,15 +210,22 @@ function openProduct(id) {
 function renderGallery() {
   if (!selectedProduct) return;
   const image = document.getElementById("detail-image");
-  image.src = selectedProduct.images[galleryIndex];
-  image.alt = `${selectedProduct.name} — view ${galleryIndex + 1} of 3`;
+  const totalImages = selectedProduct.images.length || 1;
+  galleryIndex = Math.min(galleryIndex, totalImages - 1);
+  image.src = selectedProduct.images[galleryIndex] || selectedProduct.images[0];
+  image.alt = `${selectedProduct.name} — view ${galleryIndex + 1} of ${totalImages}`;
   image.classList.remove("is-unavailable");
   image.onerror = () => {
     image.hidden = true;
     image.closest(".gallery-main")?.classList.add("image-unavailable");
   };
   image.hidden = false;
-  document.getElementById("gallery-counter").textContent = `${galleryIndex + 1} / 3`;
+  document.getElementById("gallery-counter").textContent = `${galleryIndex + 1} / ${totalImages}`;
+  const prevButton = document.querySelector(".gallery-previous");
+  const nextButton = document.querySelector(".gallery-next");
+  const hasMultipleImages = totalImages > 1;
+  if (prevButton) prevButton.hidden = !hasMultipleImages;
+  if (nextButton) nextButton.hidden = !hasMultipleImages;
   document.getElementById("gallery-thumbnails").innerHTML = selectedProduct.images.map((src, index) => `
     <button class="gallery-thumbnail ${index === galleryIndex ? "is-active" : ""}" type="button" data-gallery-index="${index}" aria-label="View product image ${index + 1}" aria-pressed="${index === galleryIndex}">
       <img src="${src}" alt="" loading="${index ? "lazy" : "eager"}">
