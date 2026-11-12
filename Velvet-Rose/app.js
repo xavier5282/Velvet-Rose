@@ -1,147 +1,94 @@
 const PRODUCTS = [
   {
-    id: "rose-lace-set",
-    name: "The Rose Lace Set",
-    category: "Lingerie Sets",
-    price: 68,
-    was: 84,
-    badge: "Bestseller",
-    isNew: false,
-    description: "An easy-to-love pairing with delicate lace and considered, comfortable support.",
-    material: "Soft stretch lace · Adjustable straps · Gentle-care recommended",
-    sizes: ["XS", "S", "M", "L", "XL"],
-    colors: [{ name: "Rose", hex: "#9b465a" }, { name: "Black", hex: "#251e20" }, { name: "Ivory", hex: "#f0e5d7" }],
-    images: [
-      "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=950&q=85"
-    ]
-  },
-  {
-    id: "silk-balconette",
-    name: "Silk-Soft Balconette",
-    category: "Bras",
-    price: 46,
-    was: 58,
-    badge: "New arrival",
-    isNew: true,
-    description: "A graceful everyday shape in silky-soft fabric, designed for an effortless, flattering fit.",
-    material: "Silky microfibre · Adjustable shoulder straps · Hook-and-eye fastening",
-    sizes: ["30B", "30C", "32B", "32C", "32D", "34B", "34C", "36B", "36C"],
-    colors: [{ name: "Rose", hex: "#a14f60" }, { name: "Midnight", hex: "#292228" }],
-    images: [
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=950&q=85"
-    ]
-  },
-  {
-    id: "everyday-brief",
-    name: "Everyday Soft Brief",
+    id: "lace-night-shorts",
+    name: "Lace Night Shorts",
     category: "Panties",
-    price: 22,
-    badge: "",
-    isNew: false,
-    description: "A smooth, breathable everyday favourite with a soft-touch finish and no-fuss comfort.",
-    material: "Cotton-modal blend · Smooth flat seams · Machine wash cold",
-    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-    colors: [{ name: "Blush", hex: "#df9fa7" }, { name: "Black", hex: "#251e20" }, { name: "Ivory", hex: "#f0e5d7" }],
-    images: [
-      "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=950&q=85"
-    ]
-  },
-  {
-    id: "satin-robe",
-    name: "The Satin Evening Robe",
-    category: "Nightwear",
-    price: 74,
+    price: 1450,
     badge: "New arrival",
     isNew: true,
-    description: "A light, fluid layer for your slower moments, finished with a self-tie belt and an easy drape.",
-    material: "Recycled satin · Self-tie waist · Relaxed fit",
-    sizes: ["XS/S", "M/L", "XL/XXL"],
-    colors: [{ name: "Champagne", hex: "#c4a276" }, { name: "Rose", hex: "#a14f60" }],
-    images: [
-      "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=950&q=85"
-    ]
-  },
-  {
-    id: "soft-sculpt",
-    name: "Soft Sculpt Short",
-    category: "Shapewear",
-    price: 39,
-    badge: "",
-    isNew: false,
-    description: "A breathable, flexible base layer with a smooth silhouette and room to move.",
-    material: "Light-support stretch knit · Seamless edges · Breathable finish",
+    description: "A high-waisted lace brief with a soft, flattering fit and a delicate floral finish.",
+    material: "Stretch lace · High-waisted fit · Hand wash recommended",
     sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-    colors: [{ name: "Mocha", hex: "#8f6552" }, { name: "Black", hex: "#251e20" }],
+    colors: [
+      { name: "Pink", hex: "#e7a9bc", image: "../assets/images/products/night_short_pent%20(2).jpeg" },
+      { name: "Black", hex: "#211c20", image: "../assets/images/products/night_short_pent%20(1).jpeg" },
+      { name: "Red", hex: "#d51f38", image: "../assets/images/products/night_short_pent%20(3).jpeg" }
+    ],
     images: [
-      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=950&q=85"
+      "../assets/images/products/night_short_pent%20(4).jpeg",
+      "../assets/images/products/night_short_pent%20(1).jpeg",
+      "../assets/images/products/night_short_pent%20(2).jpeg",
+      "../assets/images/products/night_short_pent%20(3).jpeg"
     ]
   },
   {
-    id: "intimate-comfort-wash",
-    name: "Intimate Comfort Wash",
-    category: "Personal Wellness",
-    price: 24,
-    badge: "Gentle care",
-    isNew: false,
-    description: "A gentle, fragrance-free wash for your everyday care ritual. For external use only.",
-    material: "200 ml · Fragrance-free · Vegan formula · External use only",
-    sizes: [],
-    colors: [{ name: "Clear", hex: "#d8c6b6" }],
-    images: [
-      "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=950&q=85"
-    ]
-  },
-  {
-    id: "petal-bralette",
-    name: "Petal Everyday Bralette",
-    category: "Bras",
-    price: 42,
-    badge: "",
-    isNew: false,
-    description: "A soft, wire-free favourite with a relaxed shape and the easy comfort of an everyday layer.",
-    material: "Cotton-modal blend · Wire-free support · Adjustable straps",
+    id: "lace-bra-panty-set",
+    name: "Lace Bra & Panty Set",
+    category: "Lingerie Sets",
+    price: 4250,
+    badge: "New arrival",
+    isNew: true,
+    description: "A matching lace set with a flattering shape, delicate floral detail, and a soft, feminine finish.",
+    material: "Stretch lace · Adjustable straps · Hand wash recommended",
     sizes: ["XS", "S", "M", "L", "XL"],
-    colors: [{ name: "Blush", hex: "#df9fa7" }, { name: "Ivory", hex: "#f0e5d7" }],
+    colors: [
+      { name: "Red", hex: "#d52d45", image: "../assets/images/products/bra_penti_set%20(2).jpeg" },
+      { name: "Burgundy", hex: "#92283f", image: "../assets/images/products/bra_penti_set%20(3).jpeg" },
+      { name: "Blue", hex: "#315789", image: "../assets/images/products/bra_penti_set%20(4).jpeg" }
+    ],
     images: [
-      "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=950&q=85"
+      "../assets/images/products/bra_penti_set%20(1).jpeg",
+      "../assets/images/products/bra_penti_set%20(2).jpeg",
+      "../assets/images/products/bra_penti_set%20(3).jpeg",
+      "../assets/images/products/bra_penti_set%20(4).jpeg"
     ]
   },
   {
-    id: "velvet-slip",
-    name: "Velvet Hour Slip",
+    id: "romance-glossy-bodysuit",
+    name: "Romance Glossy Bodysuit",
+    category: "Lingerie Sets",
+    price: 3290,
+    badge: "New arrival",
+    isNew: true,
+    description: "A striking glossy bodysuit with a sleek silhouette and a bold, confident finish.",
+    material: "Gloss-finish stretch fabric · Halter neckline · Hand wash recommended",
+    sizes: ["S", "M", "L", "XL"],
+    colors: [
+      { name: "Black", hex: "#171717", image: "../assets/images/products/romance_3x%20(1).jpeg" },
+      { name: "Blue", hex: "#1252bd", image: "../assets/images/products/romance_3x%20(2).jpeg" },
+      { name: "Red", hex: "#e22220", image: "../assets/images/products/romance_3x%20(3).jpeg" }
+    ],
+    images: [
+      "../assets/images/products/romance_3x%20(1).jpeg",
+      "../assets/images/products/romance_3x%20(2).jpeg",
+      "../assets/images/products/romance_3x%20(3).jpeg"
+    ]
+  },
+  {
+    id: "romancea-lace-nightwear",
+    name: "Romancea Lace Nightwear",
     category: "Nightwear",
-    price: 82,
-    was: 96,
-    badge: "A little luxury",
-    isNew: false,
-    description: "A fluid, easy-to-layer slip with a graceful line and adjustable straps for a personal fit.",
-    material: "Recycled satin · Adjustable straps · Relaxed, bias-cut feel",
+    price: 4690,
+    badge: "New arrival",
+    isNew: true,
+    description: "A romantic sheer nightdress with a lace bodice, soft drape, and delicate finishing details.",
+    material: "Sheer mesh · Floral lace · Adjustable straps",
     sizes: ["XS", "S", "M", "L", "XL"],
-    colors: [{ name: "Midnight", hex: "#292228" }, { name: "Champagne", hex: "#c4a276" }],
+    colors: [
+      { name: "Emerald", hex: "#0d4f46", image: "../assets/images/products/romancea_x3%20(1).jpeg" },
+      { name: "Navy", hex: "#172d64", image: "../assets/images/products/romancea_x3%20(2).jpeg" },
+      { name: "Black", hex: "#171417", image: "../assets/images/products/romancea_x3%20(3).jpeg" }
+    ],
     images: [
-      "https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=950&q=85",
-      "https://images.unsplash.com/photo-1543076447-215ad9ba6923?auto=format&fit=crop&w=950&q=85"
+      "../assets/images/products/romancea_x3%20(2).jpeg",
+      "../assets/images/products/romancea_x3%20(1).jpeg",
+      "../assets/images/products/romancea_x3%20(3).jpeg"
     ]
   }
 ];
 
 const STORAGE_KEYS = { cart: "velvet-rose-cart-v1", wishlist: "velvet-rose-wishlist-v1" };
-const currency = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
+const currency = new Intl.NumberFormat("en-BD", { style: "currency", currency: "BDT", maximumFractionDigits: 0 });
 const getProduct = id => PRODUCTS.find(product => product.id === id);
 const formatMoney = amount => currency.format(amount);
 let cart = readStorage(STORAGE_KEYS.cart, []);
@@ -213,7 +160,7 @@ function renderProducts() {
         <img src="${product.images[0]}" alt="${escapeHTML(product.name)}" loading="lazy" data-fallback="true">
         ${product.badge ? `<span class="product-badge">${escapeHTML(product.badge)}</span>` : ""}
         <button class="product-heart" type="button" data-action="wishlist" data-id="${product.id}" aria-label="Save ${escapeHTML(product.name)} to wishlist" aria-pressed="${wishlist.includes(product.id)}">♡</button>
-        <button class="product-quickview" type="button" data-action="view" data-id="${product.id}">View all three images</button>
+        <button class="product-quickview" type="button" data-action="view" data-id="${product.id}">View all ${product.images.length} images</button>
       </div>
       <div class="product-meta">
         <p class="product-category">${escapeHTML(product.category)}</p>
@@ -268,14 +215,14 @@ function renderGallery() {
   if (!selectedProduct) return;
   const image = document.getElementById("detail-image");
   image.src = selectedProduct.images[galleryIndex];
-  image.alt = `${selectedProduct.name} — view ${galleryIndex + 1} of 3`;
+  image.alt = `${selectedProduct.name} — view ${galleryIndex + 1} of ${selectedProduct.images.length}`;
   image.classList.remove("is-unavailable");
   image.onerror = () => {
     image.hidden = true;
     image.closest(".gallery-main")?.classList.add("image-unavailable");
   };
   image.hidden = false;
-  document.getElementById("gallery-counter").textContent = `${galleryIndex + 1} / 3`;
+  document.getElementById("gallery-counter").textContent = `${galleryIndex + 1} / ${selectedProduct.images.length}`;
   document.getElementById("gallery-thumbnails").innerHTML = selectedProduct.images.map((src, index) => `
     <button class="gallery-thumbnail ${index === galleryIndex ? "is-active" : ""}" type="button" data-gallery-index="${index}" aria-label="View product image ${index + 1}" aria-pressed="${index === galleryIndex}">
       <img src="${src}" alt="" loading="${index ? "lazy" : "eager"}">
@@ -283,6 +230,15 @@ function renderGallery() {
   `).join("");
   document.querySelectorAll(".gallery-thumbnail img").forEach(thumb => thumb.addEventListener("error", () => { thumb.hidden = true; }, { once: true }));
 }
+
+document.getElementById("detail-color").addEventListener("change", event => {
+  if (!selectedProduct) return;
+  const color = selectedProduct.colors.find(item => item.name === event.currentTarget.value);
+  const imageIndex = selectedProduct.images.indexOf(color?.image);
+  if (imageIndex < 0) return;
+  galleryIndex = imageIndex;
+  renderGallery();
+});
 
 function moveGallery(direction) {
   if (!selectedProduct) return;
@@ -321,8 +277,9 @@ function renderCart() {
   const lines = document.getElementById("cart-lines");
   lines.innerHTML = cart.length ? cart.map(item => {
     const product = getProduct(item.id);
+    const colorImage = product.colors.find(color => color.name === item.color)?.image || product.images[0];
     return `<article class="cart-line">
-      <img src="${product.images[0]}" alt="${escapeHTML(product.name)}" data-fallback="true">
+      <img src="${colorImage}" alt="${escapeHTML(product.name)}" data-fallback="true">
       <div><h3>${escapeHTML(product.name)}</h3><p>${item.size !== "One size" ? `Size ${escapeHTML(item.size)} · ` : ""}${escapeHTML(item.color)}</p>
       <div class="quantity-control"><button type="button" data-action="quantity" data-key="${escapeHTML(item.key)}" data-delta="-1" aria-label="Decrease quantity">−</button><span>${item.quantity}</span><button type="button" data-action="quantity" data-key="${escapeHTML(item.key)}" data-delta="1" aria-label="Increase quantity">+</button>
       <button class="remove-item" type="button" data-action="remove" data-key="${escapeHTML(item.key)}">Remove</button></div></div>
@@ -332,7 +289,7 @@ function renderCart() {
   watchImages(lines);
   const subtotal = cart.reduce((sum, item) => sum + getProduct(item.id).price * item.quantity, 0);
   const discount = Math.round(subtotal * activeDiscount * 100) / 100;
-  const shipping = subtotal === 0 || subtotal >= 75 ? 0 : 6;
+  const shipping = subtotal === 0 || subtotal >= 9000 ? 0 : 720;
   document.getElementById("cart-subtotal").textContent = formatMoney(subtotal);
   document.getElementById("cart-shipping").textContent = subtotal === 0 || shipping === 0 ? (subtotal === 0 ? formatMoney(0) : "Complimentary") : formatMoney(shipping);
   document.getElementById("cart-discount-line").hidden = discount === 0;
